@@ -97,7 +97,7 @@ When the failure rate crossed 50%, the circuit transitioned to `OPEN`:
 
 ![Circuit Breaker](docs/circuit-breaker.png)
 
-### Ledger Integrity Under Chaos
+### Ledger Integrity Under Chaos 
 
 Despite 42 failed transactions, the double-entry ledger remained perfectly balanced:
 
