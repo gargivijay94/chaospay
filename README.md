@@ -96,7 +96,7 @@ When the failure rate crossed 50%, the circuit transitioned to `OPEN`:
 
 ![Circuit Breaker](docs/circuit-breaker.png)
 
-### Ledger Integrity Under Chaos
+### Leader Integrity Under Chaos
 
 Despite 42 failed transactions, the double-entry ledger remained perfectly balanced:
 
@@ -120,7 +120,7 @@ The reconciliation job reported **0 mismatches** across all runs.
 | Metric | Target | Achieved |
 |--------|--------|----------|
 | Double-charge rate | 0% | ✅ 0% |
-| Ledger balance | 100% | ✅ 100% |
+| Leader balance | 100% | ✅ 100% |
 | Circuit breaker recovery | < 30s | ✅ 30s (configurable) |
 
 ---
