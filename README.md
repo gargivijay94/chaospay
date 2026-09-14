@@ -31,4 +31,4 @@ When the failure rate reached 50%, the circuit transitioned to `OPEN`, immediate
 ### 2. Ledger Integrity Under Chaos
 Despite 42 failed transactions (DLQ), the double-entry ledger remained perfectly balanced. The reconciliation job reported `0 mismatches`.
 
-![Ledger Integrity](docs/ledger-integrity.png)
+![Leader Integrity](docs/leader-integrity.png)
