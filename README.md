@@ -27,6 +27,7 @@ ChaosPay solves all four using battle-tested distributed systems patterns.
 
 ![Architecture](docs/architecture.png)
 
+
 ### Core Components
 
 | Component | Responsibility | Tech |
@@ -96,7 +97,7 @@ When the failure rate crossed 50%, the circuit transitioned to `OPEN`:
 
 ![Circuit Breaker](docs/circuit-breaker.png)
 
-### Leader Integrity Under Chaos
+### Ledger Integrity Under Chaos
 
 Despite 42 failed transactions, the double-entry ledger remained perfectly balanced:
 
@@ -111,7 +112,7 @@ HAVING SUM(CASE WHEN direction='DEBIT' THEN -amount ELSE amount END) <> 0;
 
 The reconciliation job reported **0 mismatches** across all runs.
 
-![Leader Integrity](docs/leader-integrity.png)
+![Ledger Integrity](docs/ledger-integrity.png)
 
 ---
 
@@ -120,7 +121,7 @@ The reconciliation job reported **0 mismatches** across all runs.
 | Metric | Target | Achieved |
 |--------|--------|----------|
 | Double-charge rate | 0% | ✅ 0% |
-| Leader balance | 100% | ✅ 100% |
+| Ledger balance | 100% | ✅ 100% |
 | Circuit breaker recovery | < 30s | ✅ 30s (configurable) |
 
 ---
