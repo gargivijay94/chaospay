@@ -111,7 +111,7 @@ HAVING SUM(CASE WHEN direction='DEBIT' THEN -amount ELSE amount END) <> 0;
 
 The reconciliation job reported **0 mismatches** across all runs.
 
-![Ledger Integrity](docs/ledger-integrity.png)
+![Leader Integrity](docs/leader-integrity.png)
 
 ---
 
