@@ -7,6 +7,9 @@ services:
       POSTGRES_DB: chaospay
       POSTGRES_USER: chaospay
       POSTGRES_PASSWORD: chaospay
+      POSTGRES_INITDB_ARGS: "--locale=C --encoding=UTF8"
+      TZ: UTC
+      PGTZ: UTC
     ports:
       - "5432:5432"
     volumes:
